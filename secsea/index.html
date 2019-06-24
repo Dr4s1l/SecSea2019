@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>IoT Security digging in</title>
+  <meta name="generator" content="Hovercraft! 1.0 http://regebro.github.com/hovercraft">
+  </meta>
+  <link rel="stylesheet" href="css/hovercraft.css" media="all">
+  </link>
+  <link rel="stylesheet" href="css/impressConsole.css" media="all">
+  </link>
+  <link rel="stylesheet" href="css/highlight.css" media="all">
+  </link>
+  <link rel="stylesheet" href="secsea/css/hovercraft.css" media="screen,projection">
+  </link>
+  <link rel="stylesheet" href="secsea/css/highlight.css" media="screen,projection">
+  </link>
+  <link rel="stylesheet" href="secsea/css/secsea.css" media="screen,projection">
+  </link>
+  <link rel="stylesheet" type="text/css" href="secsea/css/asciinema-player.css">
+  </link>
+</head>
+
+<body class="impress-not-supported">
+  <div id="impress" data-transition-duration="500">
+    <div class="step step-level-1" step="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="0" data-y="0" data-z="0"><h1 id="analysis-and-hacking-of-car-embedded-system"><strong>Analysis and hacking of car embedded system</strong></h1><img src="secsea/images/86.jpeg" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="1" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="1600" data-y="0" data-z="0">
+      <p><strong>Journey :</strong></p>
+      <ul>
+        <li>Hacking subaru keyfob / Implementation of fobrob with rfCat</li>
+        <li>Hacking Renault Megane RS to steal-it</li>
+        <li>Reversing Honda 87 civic ECU to swap it</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="2" data-x="0" data-y="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-z="0"></div>
+    <div class="step step-level-1" step="3" data-x="1600" data-y="800" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-z="0"><h1 id="fail-of-the-week"><strong>Fail of the week</strong></h1><img src="secsea/images/failoftheweek.png" width="800px" height="450px"></img></div>
+    <div class="step step-level-1" step="4" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-x="1600" data-y="1600" data-z="0">
+      <p><strong>Why ? :</strong></p>
+      <ul>
+        <li>Hacking subaru keyfob reimplementation of fobrob with rfCat (<strong>FAIL</strong>)</li>
+        <li>Hacking Renault Megane RS to steal-it (<strong>FAIL</strong>)</li>
+        <li>Reversing Honda 87 civic ECU to swap it (<em>PARTIAL</em>)</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="5" data-x="1600" data-y="2360" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-z="0">
+      <p><strong>How to fail a project</strong></p>
+      <ul>
+        <li>Time allocation under-estimation (starting 3 weeks from deadline)</li>
+        <li>Need to feed myself, so have to work</li>
+        <li>Horific project managment</li>
+        <li>Under estimation of post delivery delay</li>
+        <li>To much ego... Skills over-estimation</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="6" data-x="5200" data-y="2360" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" data-z="0"><h1 id="distraction">Distraction ...</h1><img src="secsea/images/desk.jpg" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="7" data-x="3600" data-y="4510" data-rotate-x="0" data-rotate-y="0" data-rotate-z="90" data-scale="1" data-z="0"><h1 id="more-distraction">More distraction -_-'</h1><img src="secsea/images/distraction.jpg" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="8" data-x="3600" data-y="6660" data-rotate-x="-90" data-rotate-y="0" data-rotate-z="90" data-scale="1" data-z="0"><h1 id="about-me"><strong>About me</strong></h1>
+      <ul>
+        <li>Hardware hacking/IT security trainer</li>
+        <li>Bug Hunter when not asleep (I sleep a lot)</li>
+        <li>Hacker/Pentester</li>
+        <li>Petrolhead</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="9" data-x="17200" data-y="7200" data-z="-5200" data-rotate-z="-20" data-rotate-x="-90" data-rotate-y="0" data-scale="1"><h1 id="beasts"><strong>Beasts</strong></h1><img src="secsea/images/deuxgrosses.jpg" width="800px" height="500px"></img>
+      <ul>
+        <li>WRX STI ver.10 300HP 2.5L turbo boxer Engine</li>
+        <li>Civic AH53 100HP 1.5 liter SOHC engine 1985 EUDM "Wonder Civic"</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="10" data-x="17200" data-y="7200" data-z="-10200" data-rotate-x="-180" data-rotate-y="0" data-rotate-z="90" data-scale="1"><h1 id="so-study"><strong>So study ...</strong></h1>
+      <p>This is F**cking overconfident :</p>
+      <ul>
+        <li>Paper publication</li>
+        <li>Peer review</li>
+        <li>New methods or exploit</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="11" data-x="20200" data-y="7200" data-rotate-x="-180" data-rotate-y="0" data-rotate-z="90" data-scale="1" data-z="-10200"><h1 id="things-that-exist"><strong>Things that exist</strong></h1>
+      <p>Car Hackers Handbook for penetration tester is the most valuable ressource, it provide a risk evaluation method :</p>
+      <ul>
+        <li>3 levels of sight view</li>
+        <li>DREAD Risk evaluation reference</li>
+        <li>Approach from bird eye vue to Receipters Breakout</li>
+      </ul><img src="secsea/images/level0.png" width="300px" height="400px"></img><img src="secsea/images/dread.png" width="500px" height="400px"></img>
+      <p>** <em>opengarage initiative is also a good place to look at *</em></p>
+    </div>
+    <div class="step step-level-1" step="12" data-x="20900" data-y="9200" data-rotate-x="-180" data-rotate-y="0" data-rotate-z="90" data-scale="1" data-z="-10200"><h1 id="what-it-miss"><strong>What it miss ?</strong></h1>
+      <ul>
+        <li>Method to conduct passive recon</li>
+        <li>More simple and pragmatic exploit (Chained exploit/Daisy Chaining)</li>
+        <li>Designing a auditing tool to check safety and security compliance</li>
+      </ul>
+      <p><strong>But it still very complete and is a good ressource to write a car security evaluation method</strong></p>
+    </div>
+    <div class="step step-level-1" step="13" data-x="20900" data-y="4200" data-rotate-x="-180" data-rotate-y="0" data-rotate-z="90" data-scale="1" data-z="-10200"><h1 id="so-why"><strong>So why ?</strong></h1>
+      <ul>
+        <li>Provide a strategy to automotive passive recon</li>
+        <li>Try to implement a simple RF auditing tool with RfCat</li>
+        <li>More detailed low level extraction process</li>
+        <li>Friend requests</li>
+        <li>Unconventional attacks</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="14" data-x="35900" data-y="7200" data-z="14200" data-rotate-x="-180" data-rotate-y="0" data-rotate-z="90" data-scale="1"><h1 id="passive-recon-strategy"><strong>Passive recon strategy</strong></h1>
+      <p>Identify vehicle version and specification (Be sure all things matches) :</p>
+      <ul>
+        <li>Model codename</li>
+        <li>Engine codename (may have many)</li>
+        <li>ECU version</li>
+      </ul>
+
+    </div>
+    <div class="step step-level-1" step="15" data-x="35900" data-y="4200" data-rotate-x="-180" data-rotate-y="0" data-rotate-z="90" data-scale="1" data-z="14200"><h1 id="passive-recon-strategy-cont"><strong>Passive recon strategy (cont.)</strong></h1>
+      <li>Search for dedicated forums, look for the exact model version or for a very similar version.</li>
+      <li>Look at CAN protocol used by ECU and try to get the datasheet or at least the Programation Suite.</li>
+      <li>Begin to identify electronic component, you can buy ECUs of interrest on eBay.</li>
+      <li>Look for available ressources on the internet (press, binary dump, fails, datasheets)</li>
+    </div>
+    <div class="step step-level-1" step="16" data-x="33500" data-y="5800" data-z="14200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="90" data-scale="1"><h1 id="now-hack-i-guess"><strong>Now hack i guess ?</strong></h1><img src="secsea/images/guess.gif" width="700px" height="400px"></img></div>
+    <div class="step step-level-1" step="17" data-x="33500" data-y="9500" data-z="-5200" data-rotate-z="-20" data-rotate-x="-270" data-rotate-y="-2600" data-scale="1"><h1 id="beasts-cont"><strong>Beasts (cont.)</strong></h1><img src="secsea/images/substart.jpeg" width="800px" height="500px"></img>
+      <ul>
+        <li>WRX STI ver.10 300HP 2.5L Boxer Engine</li>
+        <li>Club version, including Keyless entry</li>
+        <li>Subaru DCCD</li>
+        <li>Subaru Si-Drive Managment</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="18" data-x="38000" data-y="12200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-5200"><h1 id="subarufobrob-rfcat-implementation"><strong>Subarufobrob RfCat implementation</strong></h1><img src="secsea/images/fobrob.png" width="800px" height="400px"></img>
+      <p><a href="https://github.com/tomwimmenhove/subarufobrob">https://github.com/tomwimmenhove/subarufobrob</a></p>
+    </div>
+    <div class="step step-level-1" step="19" data-x="38000" data-y="14200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-5200">
+      <p>Limits :</p>
+      <ul>
+        <li>Radio Newbie</li>
+        <li>Unknown protocol</li>
+        <li>Unknown software and hardware (RfCat/LimeSDR/YardStick1)</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="20" data-x="38000" data-y="16200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-5200">
+      <p>Need to do it quick and dirty :</p>
+      <ul>
+        <li>Get on simpliest way to get it working</li>
+        <li>Just assume you are correct (Decoding, demodulate, frequency choice, ...)</li>
+        <li>Get a valid sample as fast as possible</li>
+        <li>Compare results with assumption</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="21" data-x="38000" data-y="18200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-5200"><img src="secsea/images/RFCathelpers.png" width="800px" height="500px"></img>
+      <p><a href="https://github.com/AndrewMohawk/RfCatHelpers">https://github.com/AndrewMohawk/RfCatHelpers</a></p>
+    </div>
+    <div class="step step-level-1" step="22" data-x="38000" data-y="20200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-5200"><img src="secsea/images/russe.png" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="23" data-x="38000" data-y="22200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-5200"><img src="secsea/images/fccidkor.png" width="800px" height="500px"></img>
+      <p><a href="http://fccid.io/">http://fccid.io/</a></p>
+    </div>
+    <div class="step step-level-1" step="24" data-x="38000" data-y="24200" data-scale="1" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-z="-5200">
+      <p>ASK modulation used here on a frequency of 434MhZ</p><img src="secsea/images/sampling_rate.svg" width="300px" height="500px"></img><img src="secsea/images/iq_data_animation.gif" width="300px" height="500px"></img>
+    </div>
+    <div class="step step-level-1" step="25" data-x="38430" data-y="24360" data-z="-5200" data-scale="0.85" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20"></div>
+    <div class="step step-level-1" step="26" data-x="38000" data-y="26200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200">
+      <p>Note on ASK Car Hackers handbook definition :</p><img src="secsea/images/ASK_FAIL.png" width="800px" height="500px"></img>
+      <p>OOK is not the same as ASK modulation (no need to return to zero)</p>
+    </div>
+    <div class="step step-level-1" step="27" data-x="38000" data-y="28200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200"><h1 id="demo"><strong>DEMO</strong></h1><img src="secsea/images/demo.gif" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="28" data-x="38000" data-y="30200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200">
+      <asciinema-player src="images/rfcatbasic.cast"></asciinema-player>
+      <script src="secsea/js/asciinema-player.js"></script>
+    </div>
+    <div class="step step-level-1" step="29" data-x="38000" data-y="32200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200">
+      <video controls width="800px" height="500px">
+        <source src="images/cubicSDR.mp4",type="video/mp4">
+      </video>
+    </div>
+    <div class="step step-level-1" step="30" data-x="38000" data-y="34200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200"><img src="secsea/images/urhdecoding.png" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="31" data-x="38000" data-y="36200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200"><h1 id="this-still-way-to-complicated"><strong>THIS STILL WAY TO COMPLICATED !!</strong></h1>
+      <p><strong>Need low-fruit hanging</strong></p><img src="secsea/images/time.gif" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="32" data-x="38000" data-y="38200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200">
+      <p><strong>Another approach :</strong></p>
+      <p>As suggested by Tom Wimmenhove try to replicate Samy Khamkar opensesame exploit (samy.pl if you see this, I'm a HUGE fan).</p>
+      <p>So there are some attempt to reproduce <em>ROLLJAM</em> attack in the wild + using rfcat, let's try this !</p>
+      <p><a href="https://github.com/exploitagency/rfcat-rolljam">https://github.com/exploitagency/rfcat-rolljam</a></p>
+    </div>
+    <div class="step step-level-1" step="33" data-x="38000" data-y="40200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200">
+      <p><strong>Aaaaaand ... did not work :/</strong></p>
+      <ul>
+        <li>Too much code to fix</li>
+        <li>No clear documentation</li>
+        <li>Mostly based on RFCatHelpers sources code.</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="34" data-x="38000" data-y="42200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200"><h1 id="remember"><strong>Remember ?</strong></h1><img src="secsea/images/time.gif" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="35" data-x="16900" data-y="60000" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200"><h1 id="let-s-move-on"><strong>Let's move on !</strong></h1>
+    </div>
+    <div class="step step-level-1" step="36" data-x="14900" data-y="60000" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-5200"><h1 id="id1"><strong>Beasts (cont.)</strong></h1><img src="secsea/images/truestart.jpg" width="800px" height="500px"></img>
+      <ul>
+        <li>Civic AH53 100HP 1.5 liter SOHC engine 1985 EUDM "Wonder Civic"</li>
+        <li>One of the first car to get electronic injection PGM-FI</li>
+        <li>European version of Wonder Civic (ZC engine)</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="37" data-x="14900" data-y="62000" data-z="-15200" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85"><h1 id="need-information"><strong>Need information</strong></h1>
+      <p>Hard to find information and documentation on it, pretty rare car. Not the Civic Si version,
+        the true "Wonder Civic", but the version proposed to EU market. Run the same engine as CRX version.</p><img src="secsea/images/falsestart.png" width="800px" height="300px"></img>
+      <p>Confusion in version (Si with ZC engine only for JDM, a equivalent of this engine run in europe D16A1 but not really the same)</p>
+    </div>
+    <div class="step step-level-1" step="38" data-x="10900" data-y="64000" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="0.85" data-z="-15200"><h1 id="back-a-minute"><strong>Back a minute ...</strong></h1><img src="secsea/images/desk.jpg" width="800px" height="500px"></img>
+      <ul>
+        <li>Using now TL866 II+ and minipro software</li>
+        <li>Unsoldering skills</li>
+        <li>Good at searching ressources</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="39" data-x="10900" data-y="66000" data-scale="1" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-z="-15200"><h1 id="this-guy"><strong>This guy !</strong></h1><img src="secsea/images/pcb.jpg" width="400px" height="500px"></img></div>
+    <div class="step step-level-1" step="40" data-x="10900" data-y="68000" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-15200"><h1 id="datasheets"><strong>Datasheets</strong></h1><img src="secsea/images/databook.png" width="400px" height="500px"></img><img src="secsea/images/M38128.png" width="400px" height="500px"></img>
+      <ul>
+        <li>&#xB5;C need a separate ROM to run</li>
+        <li>Popular DIP28 ROM at this time</li>
+        <li>This ROM is a Masked one...</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="41" data-x="10900" data-y="66000" data-scale="1" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-z="-15200"></div>
+    <div class="step step-level-1" step="42" data-x="10900" data-y="66000" data-scale="0.2" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-z="-15200"></div>
+    <div class="step step-level-1" step="43" data-x="10900" data-y="70000" data-scale="1" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-z="-15200"><img src="secsea/images/okinow.png" width="800px" height="500px"></img>
+      <p>Still manufacture Chips, mostly into printers and ATM. <em>M38128</em> still may be used in some printers</p>
+    </div>
+    <div class="step step-level-1" step="44" data-x="2200" data-y="70000" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-15200"><img src="secsea/images/masrom.png" width="800px" height="500px"></img>
+      <p>Mask ROM may change the chip pinout on ZIF socket. Just shift by 2 from the top.
+        No need to shift for this ROM, still hard to get information.</p>
+    </div>
+    <div class="step step-level-1" step="45" data-x="1200" data-y="60000" data-rotate-x="-270" data-rotate-y="-2600" data-rotate-z="-20" data-scale="1" data-z="-15200">
+      <p>Found this on the internet :</p><img src="secsea/images/internetlib.png" width="800px" height="390px"></img><img src="secsea/images/wtf.png" width="800px" height="390px"></img>
+      <p>A lot of ressources talking about PGM-FI and chipping tune. Honda addict !</p>
+    </div>
+    <div class="step step-level-1" step="46" data-x="4200" data-y="70000" data-rotate-y="-2510" data-rotate-z="-8" data-rotate-x="-260" data-scale="1" data-z="-15200"><h1 id="id2"><strong>DEMO</strong></h1><img src="secsea/images/demo.gif" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="47" data-x="8200" data-y="70000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200">
+      <asciinema-player src="images/minipro.cast"></asciinema-player>
+      <script src="secsea/js/asciinema-player.js"></script>
+    </div>
+    <div class="step step-level-1" step="48" data-x="7200" data-y="60000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200"><img src="secsea/images/PE7-682-87_Civic_Si.png" width="200px" height="500px"></img><img src="secsea/images/pe7-85_Civic_AH53.png" width="200px" height="500px"></img><img src="secsea/images/DemoDump.png" width="200px" height="500px"></img>
+      <ul>
+        <li>Figure 1 : Civic Si internet dump</li>
+        <li>Figure 2 : Civic AH53 M27256 profile</li>
+        <li>Figure 3 : Civic AH53 M27128A profile</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="49" data-x="8200" data-y="50000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200">
+      <p>Using Hondata S300 ROM Editor</p><img src="secsea/images/romeditor.png" width="800px" height="500px"></img>
+    </div>
+    <div class="step step-level-1" step="50" data-x="8200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200"><img src="secsea/images/successdump.png" width="800px" height="500px"></img></div>
+    <div class="step step-level-1" step="51" data-x="4200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200"><img src="secsea/images/ah53map.png" width="800px" height="500px"></img>
+      <p>So far so good ...</p>
+    </div>
+    <div class="step step-level-1" step="52" data-x="2200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200">
+      <p><strong>Then I got this very interresting information. More horsepower is fine you know...</strong></p>
+      <p><em>I came across an interesting ECU so I thought I'd share. I hope this helps someone.
+It is a genuine Group N racing ECU for the vacuum advance PE7 ECU.
+The guy who showed me it is an ex Honda mechanic (of 30 something years), and used to race in the Group N class. It came out of a genuine Honda box with a PE7 sticker on the side. It had a raised ECU top cover (pressed from the factory) to accomodate the ZIF sockets.
+Naturally, curiosity got the better of me and I soon had it in pieces. I took pics of the disassembly of the ECU.
+If anyone feels like sifting through the 2 x 8kb bin files attached, go for it. From what I understand, the rev-limit has been set to 9000rpm, if that helps. The bin files have been labelled, as they were placed in the sockets.
+It seems weird that the 128kb stock ECU EPROM has been divided into 2 x 64kb EPROMs. Maybe that helps explain why disassembling the code has been so trivial.
+I have thoroughly tested the pinouts, and have come up with the attached schematic in Eagle format.
+Hope this helps someone . . . .</em></p>
+    </div>
+    <div class="step step-level-1" step="53" data-x="-200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200"><img src="secsea/images/doubleecu.jpg" width="800px" height="500px"></img>
+      <p>Splitted ECU ? Dual map?</p>
+    </div>
+    <div class="step step-level-1" step="54" data-x="-2200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200"><img src="secsea/images/socketECU.jpg" width="800px" height="500px"></img>
+      <p>Same as 38128P</p>
+    </div>
+    <div class="step step-level-1" step="55" data-x="-4200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2510" data-rotate-z="-8" data-scale="1" data-z="-15200"><img src="secsea/images/ecuschematics.jpg" width="800px" height="500px"></img>
+      <p>ROM also appear on schematics ... Can't open this in hondata</p>
+    </div>
+    <div class="step step-level-1" step="56" data-x="-6200" data-y="30000" data-rotate-y="-2416" data-rotate-z="-8" data-rotate-x="-260" data-scale="1" data-z="-15200"><h1 id="so-ok-maybe-bad-datasheet-reading"><strong>So ok maybe bad datasheet reading</strong></h1>
+      <p><strong>And then :</strong></p><img src="secsea/images/fuckrom.png" width="800px" height="400px"></img>
+      <p>This ROM is also populor among gaming console</p>
+    </div>
+    <div class="step step-level-1" step="57" data-x="-6200" data-y="30000" data-scale="0.5" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-z="-15200"></div>
+    <div class="step step-level-1" step="58" data-x="-8200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5" data-z="-15200"><h1 id="pwned"><strong>Pwned ?</strong></h1>
+      <ul>
+        <li>Dump successful with data</li>
+        <li>Structure almost the same as found on internet</li>
+        <li>Hondata can read this map !</li>
+        <li>Expert friend review</li>
+      </ul><img src="secsea/images/achievment.jpg" width="600px" height="300px"></img></div>
+    <div class="step step-level-1" step="59" data-x="-10200" data-y="30000" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5" data-z="-15200"><h1 id="so-good-right"><strong>So... Good right?</strong></h1>
+      <p>Not really :</p>
+      <ul>
+        <li>As a habit I use to name my dump files <em>.dmp</em></li>
+        <li>Hondata throw error on <em>bin</em> files</li>
+        <li>Guess what? when loading a <em>.dmp</em> file there are no error and a default map is loaded</li>
+        <li>Behavior appear to be not documented</li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="60" data-x="-10200" data-y="20000" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5" data-z="-15200"><h1 id="last-chance"><strong>Last chance</strong></h1><img src="secsea/images/damien2017.png" width="800px" height="400px"></img></div>
+    <div class="step step-level-1" step="61" data-x="-10200" data-y="20000" data-z="-1400" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5">
+      <p>Looking at Renault available tool and found that access to <em>Key reprogrammation</em> function is done by UCH (Unit&#xE9; de controle habitacle)</p><img src="secsea/images/immotools.png" width="800px" height="400px"></img>
+      <p>Wow, this one is expensive !</p>
+    </div>
+    <div class="step step-level-1" step="62" data-x="-10200" data-y="20000" data-z="-200" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5">
+      <p>On budget solution</p>
+      <p><em>Quote Originally Posted by godfathertre View Post
+i see the device now double the price from uk distributor https://www.therenaultman.com . but if available in stock is still a good price as renolink does not cover 4 button megane .
+yes sir
+RenOlink + OBDlink SX = &#xA3; 90 ( covering 90% function of "Renault Ecu Tool"
+Renault Ecu Tool = &#xA3; 700 , but it's not all days you program id46 4 butons cards ...
+Finely RenOlink is the better tool for Renault , and for free is my best acquire , no regret
+and Renault Ecu Tool , too expensive just for function "program id46 4 butons cards" , i bought this tool in hope id47 key &amp; cards programming soon ( and the D day Renault will change programming algorithm ! ) , if this tool is allays developed</em></p><img src="secsea/images/renolink.png" width="600px" height="350px"></img>
+      <p>Let's try this</p>
+      <p><a href="https://www.digital-kaos.co.uk/forums/showthread.php/523470-Renault-CAN-K-line-ECU-Tool/page3">https://www.digital-kaos.co.uk/forums/showthread.php/523470-Renault-CAN-K-line-ECU-Tool/page3</a></p>
+    </div>
+    <div class="step step-level-1" step="63" data-x="-10200" data-y="20000" data-z="1200" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5">
+      <p>What is K-line ?</p><img src="secsea/images/ecu_hackingKWP2000.png" width="600px" height="300px"></img><img src="secsea/images/KWP200new.png" width="600px" height="300px"></img>
+      <p>Quite interresting</p>
+    </div>
+    <div class="step step-level-1" step="64" data-x="-10200" data-y="20000" data-z="3200" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5">
+      <p>Look at the immotool software</p><img src="secsea/images/ecutool.png" width="800px" height="400px"></img>
+    </div>
+    <div class="step step-level-1" step="65" data-x="-10200" data-y="20000" data-z="5200" data-scale="1" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8">
+      <p>Deeper ?</p><img src="secsea/images/renaultecu.png" width="800px" height="400px"></img>
+      <p>Confirmation of <em>key reprogramation</em> function and UCH chip informations...</p>
+    </div>
+    <div class="step step-level-1" step="66" data-x="-10200" data-y="20000" data-z="5200" data-scale="0.5" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8"></div>
+    <div class="step step-level-1" step="67" data-x="-10200" data-y="20000" data-z="7400" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5"><h1 id="and"><strong>And... ?</strong></h1>
+      <p><strong>Not enough time and skills to reverse windows binary</strong>
+        <strong>Still waiting for order delivery... Sorry guys</strong></p>
+    </div>
+    <div class="step step-level-1" step="68" data-x="-10200" data-y="20000" data-z="-3400" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5"><h1 id="what-have-i-learned"><strong>What have I learned ?</strong></h1>
+      <ul>
+        <li>Don't trust internet information especially softwares</li>
+        <li>Don't be so overconfident, do not draw hasty conclusions</li>
+        <li>Try to attempt a talk I can finish in time</li>
+        <li><strong>Move distractions away</strong></li>
+      </ul>
+    </div>
+    <div class="step step-level-1" step="69" data-x="-10200" data-y="20000" data-z="-5400" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5"><h1 id="what-s-next"><strong>What's next ?</strong></h1>
+      <ul>
+        <li>Attempt HITB/Hardwear talk (vote and CFP review in progress)</li>
+        <li>Get a Tesla to prepare Pwn2Own 2020</li>
+        <li>Find a way to work with/at Roborace</li>
+      </ul><img src="secsea/images/roborace.jpg" width="600px" height="300px"></img></div>
+    <div class="step step-level-1" step="70" data-x="-10200" data-y="20000" data-z="-7400" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5"><h1 id="thanks"><strong>Thanks !!</strong></h1><img src="secsea/images/folks.gif" width="600px" height="300px"></img></div>
+    <div class="step step-level-1" step="71" data-x="0" data-y="0" data-rotate-x="-260" data-rotate-y="-2416" data-rotate-z="-8" data-scale="0.5" data-z="-7400"></div>
+  </div>
+  <div id="hovercraft-help">
+    <table>
+      <tr>
+        <th>Space</th>
+        <td>Forward</td>
+      </tr>
+      <tr>
+        <th>Right, Down, Page Down</th>
+        <td>Next slide</td>
+      </tr>
+      <tr>
+        <th>Left, Up, Page Up</th>
+        <td>Previous slide</td>
+      </tr>
+      <tr>
+        <th>P</th>
+        <td>Open presenter console</td>
+      </tr>
+      <tr>
+        <th>H</th>
+        <td>Toggle this help</td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript" src="js/impress.js"></script>
+  <script type="text/javascript" src="js/impressConsole.js"></script>
+  <script type="text/javascript" src="js/hovercraft.js"></script>
+</body>
+
+</html>

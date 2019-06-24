@@ -1,0 +1,127 @@
+/**
+ * CSS styles for Impressionist presentations editor
+ *
+ * Copyright 2016, Henrik Ingo (@henrikingo)
+ * MIT License
+ */
+
+/* Camera plugin */
+
+#impressionist-toolbar .impressionist-camera-minus,
+#impressionist-toolbar .impressionist-camera-plus,
+#impressionist-toolbar .impressionist-step-minus,
+#impressionist-toolbar .impressionist-step-plus {
+  font-size: 70%;
+  width: 25px;
+  height: 15px;
+  padding: 0;
+  border: 0;
+  background: none;
+
+  position: relative;
+  top: 15px;
+  left: -47px;
+}
+
+/* Cut away the empty space left by the plus and minus buttons as they were relatively positioned elsewhere. */
+#impressionist-toolbar-group-1 span,
+#impressionist-toolbar-group-2 span {
+    margin-right: -48px;
+}
+#impressionist-toolbar-group-1 span.nocut,
+#impressionist-toolbar-group-2 span.nocut {
+    margin-right: none;
+}
+
+/* Cameracontrols plugin (the buttons that allow you to pan, zoom, scale and rotate the camera) */
+
+#impressionist-cameracontrols {
+    pointer-events: auto;
+}
+
+#impressionist-cameracontrols-xy {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+#impressionist-cameracontrols-z {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+#impressionist-cameracontrols-rotate {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* Stepedit plugin. Reorder steps dialog. */
+
+#impressionist-stepedit-reorder-dialog {
+    pointer-events: auto;
+    background-color: #fff;
+    border-bottom: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    opacity: 0.9;
+    color: #000;
+    padding: 10px;
+    width: 200px;
+}
+
+#impressionist-stepedit-reorder-dialog table {
+    width: 100%;
+}
+
+#impressionist-stepedit-reorder-dialog td {
+    vertical-align: middle;
+}
+
+#impressionist-stepedit-reorder-dialog button {
+    width: 22px;
+    height: 22px;
+}
+/* Tinymce integration */
+#tinymce-toolbar,
+.mce-floatpanel {
+    pointer-events: auto;
+}
+/**
+ * CSS styles for Impressionist presentations editor
+ *
+ * Copyright 2016, Henrik Ingo (@henrikingo)
+ * MIT License
+ */
+
+/* Many impress.js presentations set pointer-events: none. We must turn them back on for our toolbar. */
+#impressionist-toolbar         {
+    pointer-events: auto;
+    opacity: 0.9;
+    color: #000;
+}
+
+#impressionist-toolbar-groups {
+    background-color: #fff;
+    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-bottom: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+}
+
+#impressionist-toolbar-groups input {
+    width: 3em;
+    font-size: 80%;
+    opacity: 1;
+}
+#impressionist-toolbar-groups input[type="checkbox"] {
+    width: 1em;
+}
+
+#impressionist-toolbar-titles button {
+    font-size: 70%;
+}
+
+#impressionist-toolbar-titles button.selected {
+    font-weight: bold;
+}
